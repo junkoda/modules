@@ -17,7 +17,7 @@ export MODULEPATH=/Users/junkoda/Research/opt/modules
 source /usr/local/opt/modules/init/zsh
 ```
 
-Locate `modules` directory in
+Locate this `modules` directory as
 
 ```bash
 /Users/junkoda/Research/opt/modules
