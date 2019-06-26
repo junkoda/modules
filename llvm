@@ -1,0 +1,19 @@
+#%Module1.0#####################################################################
+##
+## llvm modulefile
+##
+proc ModulesHelp { } {
+    puts stderr "\tLLVM compilers"
+}
+
+# module-whatis   "LLVM compilers"
+
+# append pathes
+prepend-path    PATH            /usr/local/opt/llvm/bin
+prepend-path    LD_LIBRARY_PATH /usr/local/opt/llvm/lib
+setenv          CPPFLAGS        "-I/usr/local/opt/llvm/include"
+setenv          LDFLAGS         "-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+setenv          CC              clang
+setenv          CXX             clang++
+
+
